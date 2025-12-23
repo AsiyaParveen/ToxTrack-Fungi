@@ -1,0 +1,79 @@
+======================================================================
+David W. Aha
+9/27/88 
+Comments on the Mushroom Database
+======================================================================
+
+I've replaced the original database twice.  
+   1. The database was lost due to backup/downtime problems here at
+      UCI.  I replaced the database with a version given to me by
+      Wayne Iba.  A brief check indicated that it was in good shape.
+   2. Jeff Schlimmer, donater of the database, recently mailed me a
+      copy of the database, with suitable 1-character acronymns for
+      attribute values (the size of the compressed database shrinks
+      from 120 to 50k).  
+
+I suspect that several people have had trouble copying the database over
+to their locations.  Please let me know if there is any problem in the 
+future.
+
+Thanks,
+    Dave Aha
+
+
+# File explaination 
+**UCI Mushroom dataset folder** 
+
+---
+
+## 📁 UCI Mushroom Dataset – Files Explanation
+
+Jab tum UCI website se dataset open karti ho to wahan yeh files hoti hain:
+
+### 1️⃣ `agaricus-lepiota.data`  (IMPORTANT)
+
+✔ **YEHI ACTUAL DATASET HAI**
+
+* Comma separated values
+* Is ko hi hum **CSV bana kar model train** karte hain
+* **Isi file ko use karna hota hai**
+
+👉 **Tum sirf isi file par kaam karo**
+
+---
+
+### 2️⃣ `agaricus-lepiota.names` 📄
+
+📌 **Documentation file**
+
+* Har column ka matlab likha hota hai
+* Codes ka meaning (jaise: `b = bell`, `c = conical`)
+* **Model training ke liye use nahi hoti**
+
+👉 Sirf **samajhne ke liye** hoti hai
+
+---
+
+### 3️⃣ `Index` ❌ (IGNORE)
+
+📌 **History / navigation file**
+
+* Sirf website ka index
+* Dataset ka hissa nahi
+* **Kisi ML kaam ka nahi**
+
+👉 Ignore kar do
+
+---
+
+### 4️⃣ `expanded.Z` ❌ (IGNORE)
+
+📌 **Compressed archive file**
+
+* Purana UNIX compressed format
+* Model ya dataset nahi
+* Normally research backup hota hai
+
+👉 Isay open ya use karne ki **zarurat nahi**
+
+---
